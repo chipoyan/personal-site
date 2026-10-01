@@ -9,14 +9,12 @@ export default function Index({ pages }) {
 				<link rel="stylesheet" href="./css/style.css" />
 			</head>
 			<body>
-				<h1>All Pages</h1>
-				<ul>
-					{pages.map(({ slug }) => (
-						<li key={slug}>
-							<a href={`./posts/${slug}/`}>{slug}</a>
-						</li>
-					))}
-				</ul>
+				<h1>personal site of Albert Wen</h1>
+				{pages.map(({ slug }) => (
+					<div key={slug}>
+						<a href={`./posts/${slug}/`}>{slug}</a>
+					</div>
+				))}
 			</body>
 		</html>
 	);
