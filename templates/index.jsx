@@ -6,7 +6,7 @@ export default function Index({ pages }) {
 			<head>
 				<meta charSet="utf-8" />
 				<title>Index</title>
-				<link rel="stylesheet" href="/css/style.css" />
+				<link rel="stylesheet" href="./css/style.css" />
 			</head>
 			<body>
 				<h1>All Pages</h1>
