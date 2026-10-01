@@ -1,0 +1,18 @@
+{
+	"name": "crackden",
+	"version": "1.0.0",
+	"description": "Albert Wen's personal website",
+	"license": "ISC",
+	"author": "Albert Wen",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"esbuild": "^0.28.0",
+		"marked": "^18.0.14",
+		"react": "^19.2.6",
+		"react-dom": "^19.2.6"
+	}
+}

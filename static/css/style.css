@@ -1,0 +1,32 @@
+:root {
+	--text: #2e2e2e;
+	--bg: #d6d6d6;
+	--link: #0060df;
+	--link-visited: #7a3fb5;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #d6d6d6;
+		--bg: #2e2e2e;
+		--link: #6ab0ff;
+		--link-visited: #c49bff;
+	}
+}
+
+body {
+	color: var(--text);
+	background-color: var(--bg);
+}
+
+a {
+	color: var(--link);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
+
+.main {
+	max-width: 65ch;
+}
