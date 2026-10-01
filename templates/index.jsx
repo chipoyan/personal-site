@@ -13,7 +13,7 @@ export default function Index({ pages }) {
 				<ul>
 					{pages.map(({ slug }) => (
 						<li key={slug}>
-							<a href={`/articles/${slug}/`}>{slug}</a>
+							<a href={`./posts/${slug}/`}>{slug}</a>
 						</li>
 					))}
 				</ul>
