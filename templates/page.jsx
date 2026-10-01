@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Page({ slug, content }) {
+	const title = slug.replaceAll("_", " ");
 	return (
 		<html lang="en">
 			<head>
@@ -9,11 +10,11 @@ export default function Page({ slug, content }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<title>{slug}</title>
+				<title>{title}</title>
 				<link rel="stylesheet" href="../../css/style.css" />
 			</head>
 			<body>
-				<h1>{slug}</h1>
+				<h1>{title}</h1>
 				<div
 					className="main"
 					dangerouslySetInnerHTML={{ __html: content }}

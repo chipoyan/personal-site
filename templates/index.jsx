@@ -16,7 +16,9 @@ export default function Index({ pages }) {
 				<h1>personal site of Albert Wen</h1>
 				{pages.map(({ slug }) => (
 					<div key={slug}>
-						<a href={`./posts/${slug}/`}>{slug}</a>
+						<a href={`./posts/${slug}/`}>
+							{slug.replaceAll("_", " ")}
+						</a>
 					</div>
 				))}
 			</body>
