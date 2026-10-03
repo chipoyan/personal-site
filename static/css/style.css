@@ -1,14 +1,12 @@
 :root {
-	--text: #2e2e2e;
-	--bg: #d6d6d6;
 	--link: #0060df;
 	--link-visited: #7a3fb5;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--text: #d6d6d6;
-		--bg: #2e2e2e;
+		--text: #ffffff;
+		--bg: #000000;
 		--link: #6ab0ff;
 		--link-visited: #c49bff;
 	}
