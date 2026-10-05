@@ -98,7 +98,10 @@ async function buildBlog() {
 	// load content files
 	const contentFiles = fs
 		.readdirSync(postsSrc)
-		.filter((f) => f.endsWith(".md"));
+		.filter((f) => f.endsWith(".md"))
+		.sort()
+		.reverse();
+
 	const pages = contentFiles.map((file) => {
 		const slug = path.basename(file, ".md");
 		const content = marked.parse(
